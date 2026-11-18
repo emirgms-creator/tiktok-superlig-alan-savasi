@@ -1,0 +1,53 @@
+{
+  "port": 3000,
+  "teams": [
+    {
+      "id": "BJK",
+      "name": "Beşiktaş",
+      "primaryColor": "#24272e",
+      "secondaryColor": "#ffffff",
+      "accentColor": "#e2e8f0",
+      "corner": "topLeft",
+      "logoPath": "/assets/teams/bjk.png"
+    },
+    {
+      "id": "FB",
+      "name": "Fenerbahçe",
+      "primaryColor": "#0b3d91",
+      "secondaryColor": "#ffed00",
+      "accentColor": "#ffed00",
+      "corner": "topRight",
+      "logoPath": "/assets/teams/fb.png"
+    },
+    {
+      "id": "GS",
+      "name": "Galatasaray",
+      "primaryColor": "#dc2626",
+      "secondaryColor": "#fdb912",
+      "accentColor": "#fdb912",
+      "corner": "bottomLeft",
+      "logoPath": "/assets/teams/gs.png"
+    },
+    {
+      "id": "TS",
+      "name": "Trabzonspor",
+      "primaryColor": "#660c26",
+      "secondaryColor": "#38bdf8",
+      "accentColor": "#38bdf8",
+      "corner": "bottomRight",
+      "logoPath": "/assets/teams/ts.png"
+    }
+  ],
+  "chatKeywords": {
+    "BJK": ["bjk"],
+    "FB": ["fb"],
+    "GS": ["gs"],
+    "TS": ["ts"]
+  },
+  "arena": {
+    "cols": 48,
+    "rows": 64,
+    "initialBallsPerTeam": 0,
+    "maxBalls": 2000
+  }
+}
