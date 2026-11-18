@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Süper Lig Alan Savaşı - TikTok Live</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="stage-wrapper">
+    <div class="phone-frame" id="game-root">
+      <!-- Üst HUD (TikTok canlı yayın sohbetinin üstünde, her zaman görünür alan) -->
+      <header class="hud-top">
+        <div class="title-row">
+          <div class="brand">
+            <h1>SÜPER LİG ALAN SAVAŞI</h1>
+          </div>
+        </div>
+
+        <div class="team-warning-banner">
+          💬 Takımını seçmek için sohbete yaz: <span id="team-warning-codes"><b>BJK</b> • <b>FB</b> • <b>GS</b> • <b>TS</b></span>
+        </div>
+
+        <div class="gift-tiers-strip">
+          <span class="tier-pill"><span class="tier-icon">🌹</span> Gül <b>+3</b></span>
+          <span class="tier-pill"><span class="tier-icon">🫰</span> Parmak Kalp <b>+10</b></span>
+          <span class="tier-pill"><span class="tier-icon">🍩</span> Donut <b>+35</b></span>
+          <span class="tier-pill"><span class="tier-icon">🫶</span> El Kalbi <b>+81</b></span>
+          <span class="tier-pill"><span class="tier-icon">🔫</span> Para Tabancası <b>+201</b></span>
+          <span class="tier-pill"><span class="tier-icon">🌌</span> Galaksi <b>+351</b></span>
+        </div>
+
+        <div class="scoreboard" id="scoreboard"></div>
+
+        <div class="ticker" id="ticker">
+          <span class="ticker-empty">💬 Katılmak için sohbete <b>BJK</b>, <b>FB</b>, <b>GS</b> veya <b>TS</b> yaz!</span>
+        </div>
+      </header>
+
+      <!-- Orta Arena (Grid + Toplar) -->
+      <main class="arena-container">
+        <canvas id="arena-canvas"></canvas>
+
+        <!-- Ortada Geçici Bildirimler -->
+        <div class="toast-container" id="toast-container"></div>
+
+        <!-- %100 Kazanma Ekranı -->
+        <div class="victory-overlay hidden" id="victory-overlay">
+          <div class="victory-card" id="victory-card">
+            <div class="victory-crown">🏆</div>
+            <img class="victory-logo hidden" id="victory-logo" alt="Şampiyon Logo" />
+            <div class="victory-badge" id="victory-badge"></div>
+            <h2 id="victory-title">ŞAMPİYON!</h2>
+            <p id="victory-subtitle">%100 Alan Ele Geçirildi</p>
+            <div class="victory-countdown">Yeni tur <span id="victory-timer">5</span> sn içinde başlıyor...</div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Alt Güvenli Bölge (TikTok sohbet/hediye barı için boş alan) -->
+      <footer class="hud-bottom-safe"></footer>
+    </div>
+  </div>
+
+  <script src="/js/game.js"></script>
+</body>
+</html>
